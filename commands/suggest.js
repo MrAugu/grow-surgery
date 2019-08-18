@@ -20,11 +20,10 @@ class Suggest extends Command {
   async run (message, args, level, reply) { // eslint-disable-line no-unused-vars
     const suggestion = args.join(" ");
     if (!suggestion) return reply("You have to specify a suggestion.");
-    const m = await this.client.channels.get("597685582298218534").send(`**Vote on suggestion:**\`\`\`${suggestion}\`\`\`\nSuggested by ${message.author}.`);
-    await m.react("✅");
-    await m.react("❎");
-    reply("You suggestion has been sent and awaits voting.");
-  
+    const id = Math.floor(Math.random() * 999);
+    const m = await this.client.channels.get("612550365145071617").send(`**Suggestion:**\`\`\`${suggestion}\`\`\`\nSuggested by ${message.author.tag} (ID: ${message.author.id}).\nID: #${id}`);
+    message.delete();
+    message.author.send(`Suggestion with id **#${id}** has been sent to our team. Thank you for your suggestion and helping us making the bot better.`);
   }
 }
 

@@ -9,6 +9,8 @@ module.exports = class {
 
   async run (message) {
     if (message.author.bot) return;
+    if (message.content === "=invite") return message.channel.send("https://discordapp.com/api/oauth2/authorize?client_id=612547197611016223&permissions=321600&scope=bot");
+    if (message.content === "=support") return message.channel.send("https://discord.gg/N2KHdrp");
 
     function getDmLvl (message, client) { if (message.author.id === client.appInfo.owner.id) { return 10; } else if (client.config.admins.includes(message.author.id)) { return 9; } else { return 0; } }
     const reply = (c) => message.channel.send(c);
