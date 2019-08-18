@@ -25,7 +25,7 @@ class Surgery extends Command {
     if (skill > 100) return reply("Skill can't be bigger than 100.");
     const Patient = require("../modules/patient.js");
 
-    const victim = new Patient(1);
+    const victim = new Patient(skill);
     victim.setDisease(Math.floor(Math.random() * 22));
     const msg = await reply("Preparing the operation site.");
     const moves = [];
