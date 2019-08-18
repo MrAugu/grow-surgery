@@ -78,8 +78,9 @@ Forbidden! You do not have the required permissions to use \`${cmd.help.name}\`.
 
     message.author.permLevel = level;
     this.client.channels.get("612571315416596533").send(`\`${message.author.tag}\` (ID: ${message.author.id}) used \`${cmd.help.name}\` in ${message.guild ? "guild \`" + message.guild.name + "\` (ID: " + message.guild.id +") " : "DMs"}, channel \`${message.channel.name}\` (ID: ${message.channel.id}).\nOriginal Content: \`\`\`${message.content}\`\`\``);
+await cmd.run(message, args, level, reply);
     try {
-      await cmd.run(message, args, level, reply);
+      //await cmd.run(message, args, level, reply);
     } catch (e) {
       reply(`Internal error occured!\nError Code: \`${e}\`\nPlease report this to the developers.`);
     }
