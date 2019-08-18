@@ -33,7 +33,7 @@ module.exports = class {
     if (cmd && !message.guild && cmd.conf.guildOnly) return message.channel.send("This command is unavailable via private message. Please run this command in a server.");
 
     if (cmd.conf.args === true && !args.length) {
-      return reply(`You haven't provided any argument.\nCorrect Usage: \`+${cmd.help.name} ${cmd.help.usage}\``);
+      return reply(`You haven't provided any argument.\nCorrect Usage: \`=${cmd.help.name} ${cmd.help.usage}\``);
     }
 
     if (!cooldowns.has(cmd.help.name)) {
