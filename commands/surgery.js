@@ -118,7 +118,7 @@ Available Tools: \`${availableTools.join("\`, \`")}\`\n\n${isTrainE ? `Train-E:$
       reply(`${message.author}, you failed to cure your patient of ${victim.scanText.split("!")[0]}. ${victim.endText}`);
     } else if (victim.endText === "success") {
       const embed2 = new Discord.MessageEmbed()
-        .setTitle(`You cured ${victimDiscord.user.username} of ${victim.scanText.split("!")[0]}.`)
+        .setTitle(`You cured your patient of ${victim.scanText.split("!")[0]}.`)
         .setDescription(`Your patient managed to survive somehow.\n\n- Skill Level: ${victim.skill}\n- Surgical Sponges: ${victim.usedTools.sponges}\n- Surgical Scalpels: ${victim.usedTools.scalpels}\n- Surgical Stitches: ${victim.usedTools.stitches}\n- Surgical Antibiotics: ${victim.usedTools.antibiotics}\n- Surgical Antiseptics: ${victim.usedTools.antiseptics}\n- Surgical Ultrasounds: ${victim.usedTools.ultrasounds}\n- Surgical Lab Kits: ${victim.usedTools.labkits}\n- Surgical Anesthetics: ${victim.usedTools.anesthetics}\n- Surgical Defibrilators: ${victim.usedTools.defibrilators}\n- Surgical Splints: ${victim.usedTools.splints}\n- Surgical Clamps: ${victim.usedTools.clamps}\n- Surgical Transfusions: ${victim.usedTools.transfusions}`)
         .setThumbnail("https://vignette.wikia.nocookie.net/growtopia/images/8/8f/ItemSprites.png/revision/latest/window-crop/width/32/x-offset/1184/y-offset/1056/window-width/32/window-height/32?fill=a")
         .setColor("GREEN");
