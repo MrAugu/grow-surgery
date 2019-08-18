@@ -1,0 +1,33 @@
+{
+  "name": "lutu",
+  "version": "0.0.5",
+  "description": "The only moderation bot you need for your discord server, with a ban list, automod and more.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/MrAugu/lutu-bot.git"
+  },
+  "keywords": [
+    "discord.js",
+    "discord",
+    "bot",
+    "node.js"
+  ],
+  "author": "MrAugu#9016",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/MrAugu/lutu-bot/issues"
+  },
+  "homepage": "https://gitlab.com/MrAugu/lutu-bot#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "discord.js": "github:discordjs/discord.js",
+    "klaw": "^3.0.0",
+    "moment": "^2.23.0",
+    "moment-duration-format": "^2.2.2",
+    "ms": "^2.1.1"
+  }
+}
