@@ -12,7 +12,7 @@ class Surgery extends Command {
       guildOnly: true,
       aliases: [],
       permLevel: "User",
-      args: false,
+      args: true,
       rank: "User"
     });
   }
