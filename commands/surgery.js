@@ -7,7 +7,7 @@ class Surgery extends Command {
       name: "surgery",
       description: "Perform surgery on your patient..",
       category: "Economy",
-      usage: "<user> [train]",
+      usage: "<skill> [train]",
       enabled: true,
       guildOnly: true,
       aliases: [],
