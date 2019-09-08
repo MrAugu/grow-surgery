@@ -1,7 +1,7 @@
 const config = {
     "prefix": "=",
-    "token": "NjEyNTQ3MTk3NjExMDE2MjIz.XVj92A.j33WUIa4_UyPsPaD4sYBSTDgJiY",
-    "owner": "414764511489294347",
+    "token": "BOT_TOKEN",
+    "owner": "ID",
     "admins": [],
 
     permLevels: [
@@ -59,7 +59,7 @@ const config = {
 
       { level: 10,
         name: "Bot Owner",
-        check: (message) => "414764511489294347" === message.author.id
+        check: (message) => config.owner === message.author.id
       }
     ]
   };
